@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33031806337361802}
   - component: {fileID: 23546884985546984}
   - component: {fileID: 114857885025552588}
+  - component: {fileID: 114105068646354122}
   - component: {fileID: 54185185164849484}
   m_Layer: 0
   m_Name: CubeSphere
@@ -97,10 +98,23 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114105068646354122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1930679783817942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 997d583cdcff4df48976dae83b16e537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  springForce: 20
+  damping: 5
 --- !u!114 &114857885025552588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +126,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe7f456e8f644f439dd70988b35e117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSize: 0
-  ySize: 0
-  zSize: 0
-  roundness: 0
+  gridSize: 10
+  radius: 1
